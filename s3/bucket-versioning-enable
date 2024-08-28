@@ -5,7 +5,7 @@ provider "aws" {
 variable "bucket_names" {
   type = list(string)
   # Replace with the list of bucket names retrieved from the AWS CLI command
-  default = ["bucketname","bucketname"]
+  default = ["bucketname" , "bucketname"]
 }
 
 resource "aws_s3_bucket_versioning" "enable_versioning" {
